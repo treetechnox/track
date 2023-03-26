@@ -31,7 +31,7 @@ public class VisitorLogger implements HandlerInterceptor {
         final LocalDateTime timestamp = LocalDateTime.now();
 
         Visitor visitor = new Visitor();
-        visitor.setUser(HttpRequestResponseUtils.getLoggedInUser());
+        visitor.setUserr(HttpRequestResponseUtils.getLoggedInUser());
         visitor.setIp(ip);
         visitor.setMethod(requestMethod);
         visitor.setUrl(url);

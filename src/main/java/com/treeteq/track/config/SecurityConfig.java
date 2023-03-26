@@ -13,7 +13,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-    private static final String PASSWORD_ENCODED = "$2a$10$B18wGZhRjNau6ZBcI/NBQO6EEdJ7GyVvjjWfAK20ODz4B6LmXicRa";// roy
+    private static final String PASSWORD_ENCODED = "$2a$12$qc0KdtTW8TBH8mgmxrApY.VvM9vKnN.PtIGFuD2n4Rr70FVezWcnG";// roy
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -26,7 +26,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     public void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.inMemoryAuthentication().passwordEncoder(passwordEncoder()).withUser("roy").password(PASSWORD_ENCODED)
+        auth.inMemoryAuthentication().passwordEncoder(passwordEncoder()).withUser("treeteq").password(PASSWORD_ENCODED)
                 .roles("USER");
     }
 

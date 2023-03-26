@@ -20,7 +20,8 @@ public class Visitor {
     @Id
     @GeneratedValue // (strategy = GenerationType.IDENTITY)
     private int id;
-    private String user;
+
+    private String userr;
     private String ip;
     private String method;
     private String url;
